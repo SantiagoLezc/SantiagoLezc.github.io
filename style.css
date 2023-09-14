@@ -1,37 +1,58 @@
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&family=Teko:wght@300&display=swap');
 
 body{
-    background: #f6f5f7;
-    font-family: sans-serif; 
-    color: #3E363F;
+    background: none;
+    font-family: 'Roboto'; 
+    color: #29b6c0;
+    background-image: url(v870-mynt-17.jpg);
+    background-position: center;
+    background-size: contain;
+
+    
 }
 #contenedor{
     background-color: white;
-    width: 900px;
+    width: 1000px;
     height: 500px;
     text-align: center;
     /* Estas 3 lineas se encargan de centrar el div vertical y horizontalmente */
     position: absolute;
     inset: 0;
     margin: auto;
-    border-radius: 10px;
+    border-radius: 150px;
+    border-style: groove ;
+    border-color: #29b6c0;
     overflow: hidden;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 14px 100px rgba(15, 106, 109, 0.774);
+    
+    
 }
 #calculadora{
-    background: white;
+    background: rgb(255, 255, 255);
     /* Con estas 3 lineas vamos a hacer que los divs queden lado a lado */
     width: 50%;
     height: 100%;
     float: left;
+    background-image: url(doctorgif.gif);
+    background-position: center;
+    background-size: cover;
+   
 }
 #detalle{
-    background: #FF416C;
+    background: none;
     /* Con estas 3 lineas vamos a hacer que los divs queden lado a lado */
     width: 50%;
     height: 100%;
     float: left;
-    color: #f6f5f7;
+    color: #FF416C;
+    text-shadow: 2px 1px 5px rgb(197, 159, 159);
+    background-image: url(v870-mynt-17.jpg);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+
 }
 .contenido{
     /* Estas tres lineas van a centrar el contenido verticalmente dentro de cada div */
@@ -40,12 +61,16 @@ body{
     transform: translateY(-50%);
     overflow: hidden;
     padding: 40px;
+
+    
 }
 input {
     width: 70%;
     padding: 12px 15px;
-    border: none;
+    border-color: #29b6c0;
     background-color: #eee;
+    border-radius: 15%;
+    border-style: double;
 }
 button {
     margin: 20px;
@@ -53,15 +78,15 @@ button {
     font-weight: bold;
     padding: 12px 45px;
     border-radius: 30px;
-    background-color: #FF416C;
-    border: 1px solid #FF416C;
+    background-color: #29b6c0;
+    border: 2px solid #000000;
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: transform 20ms ease-in;
 }
 button:active {
-    transform: scale(0.95);
+    transform: scale(0.85);
 }
 #error{
     color: red;
@@ -69,7 +94,7 @@ button:active {
     display: none;
 }
 .resultado{
-    color: #0a81d1;
+    color: #91ff00;
     font-weight: bold;
     font-size: 25px;
     margin-bottom: 5px;
